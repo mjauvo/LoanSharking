@@ -1,6 +1,6 @@
 package loansharking;
 
-class Main
+class LoanSharking
 {
     public static void main(String[] args) {
     }
