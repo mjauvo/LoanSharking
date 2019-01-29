@@ -5,61 +5,61 @@ package loansharking.model;
  */
 public class Debt
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
-	private int ID;
-	private int amount;
-	private double interest;
-	private String borrowedDate;
-	private String dueDate;
-	private String paidDate;
-
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
-
-	/**
-	 * Luo uuden lainan
-	 */
-	public Debt(int ID, int amount, double interest, String borrowedDate, String dueDate) {
-		this.ID = ID;
-		this.amount = amount;
-		this.interest = interest;
-		this.borrowedDate = borrowedDate;
-		this.dueDate = dueDate;
-		this.paidDate = null;
-	}
+    private int ID;
+    private int amount;
+    private double interest;
+    private String borrowedDate;
+    private String dueDate;
+    private String paidDate;
 
     // ------------------------------
-	//  METHODS - Getters
-	// ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
+
+    public Debt() {}
+
+    public Debt(int ID, int amount, double interest, String borrowedDate, String dueDate) {
+        this.ID = ID;
+        this.amount = amount;
+        this.interest = interest;
+        this.borrowedDate = borrowedDate;
+        this.dueDate = dueDate;
+        this.paidDate = null;
+    }
+
+    // ------------------------------
+    //  METHODS - Getters
+    // ------------------------------
 
     public int getID() {
-		return this.ID;
-	}
+        return this.ID;
+    }
 
     public int getAmount() {
-		return this.amount;
-	}
+        return this.amount;
+    }
 
     public double getInterest() {
-		return this.interest;
-	}
+        return this.interest;
+    }
 
     public String getBorrowedDate() {
         return this.borrowedDate;
-	}
+    }
 
     public String getDueDate() {
-		return this.dueDate;
+        return this.dueDate;
     }
 
     public String getPaidDate() {
         return this.paidDate;
     }
 
+    @Override
     public String toString() {
         String loan = "";
         loan += "$" + getAmount() + " (" + getInterest() + "%)\n";
@@ -72,9 +72,9 @@ public class Debt
         return loan;
     }
 
-	// ------------------------------
-	//  METHODS - Setters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Setters
+    // ------------------------------
 
     public void setAmount (int amount) {
         this.amount = amount;

@@ -5,30 +5,32 @@ import loansharking.dao.*;
 import loansharking.model.*;
 
 /**
- *
- * @author mjauv
+ * A class implementing an interface
+ * for database operations.
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public class DebtDaoImpl implements DebtDao
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
     // A list representing a database
     private List<Debt> debts;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
     public DebtDaoImpl() {
         this.debts = new ArrayList<>();
     }
 
 
-	// ------------------------------
-	//  METHODS - [C] R U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - [C] R U D
+    // ------------------------------
 
     @Override
     public void createDebt(Debt debt) {
@@ -36,9 +38,9 @@ public class DebtDaoImpl implements DebtDao
         this.debts.add(debt);
     }
 
-	// ------------------------------
-	//  METHODS - C [R] U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C [R] U D
+    // ------------------------------
 
     @Override
     public Debt readDebtById(int ID) {
@@ -52,9 +54,9 @@ public class DebtDaoImpl implements DebtDao
         return this.debts;
     }
 
-	// ------------------------------
-	//  METHODS - C R U [D]
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C R U [D]
+    // ------------------------------
 
     @Override
     public void deleteDebt(Debt debt) {

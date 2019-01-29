@@ -4,14 +4,15 @@ import java.util.*;
 import loansharking.model.*;
 
 /**
- *
- * @author mjauv
+ * An interface class for database operations.
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public interface DebtDao
 {
-	// ------------------------------
-	//  METHODS - C R U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C R U D
+    // ------------------------------
 
     void createDebt(Debt debt);     // C
     Debt readDebtById(int ID);      // R

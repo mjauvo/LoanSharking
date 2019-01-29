@@ -5,30 +5,32 @@ import loansharking.dao.*;
 import loansharking.model.*;
 
 /**
- *
- * @author mjauv
+ * A class implementing an interface
+ * for database operations.
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public class GodfatherDaoImpl implements GodfatherDao
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
     // A list representing a database
     private List<Godfather> godfathers;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
     public GodfatherDaoImpl() {
         this.godfathers = new ArrayList<>();
     }
 
 
-	// ------------------------------
-	//  METHODS - [C] R U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - [C] R U D
+    // ------------------------------
 
     @Override
     public void createGodfather(Godfather godfather) {
@@ -36,9 +38,9 @@ public class GodfatherDaoImpl implements GodfatherDao
         this.godfathers.add(godfather);
     }
 
-	// ------------------------------
-	//  METHODS - C [R] U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C [R] U D
+    // ------------------------------
 
     @Override
     public Godfather readGodfatherById(int ID) {
@@ -52,9 +54,9 @@ public class GodfatherDaoImpl implements GodfatherDao
         return this.godfathers;
     }
 
-	// ------------------------------
-	//  METHODS - C R U [D]
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C R U [D]
+    // ------------------------------
 
     @Override
     public void deleteGodfather(Godfather godfather) {

@@ -5,30 +5,32 @@ import loansharking.dao.*;
 import loansharking.model.*;
 
 /**
- *
- * @author mjauv
+ * A class implementing an interface
+ * for database operations.
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public class CustomerDaoImpl implements CustomerDao
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
     // A list representing a database
     private List<Customer> customers;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
     public CustomerDaoImpl() {
         this.customers = new ArrayList<>();
     }
 
 
-	// ------------------------------
-	//  METHODS - [C] R U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - [C] R U D
+    // ------------------------------
 
     @Override
     public void createCustomer(Customer customer) {
@@ -36,9 +38,9 @@ public class CustomerDaoImpl implements CustomerDao
         this.customers.add(customer);
     }
 
-	// ------------------------------
-	//  METHODS - C [R] U D
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C [R] U D
+    // ------------------------------
 
     @Override
     public Customer readCustomerById(int ID) {
@@ -52,9 +54,9 @@ public class CustomerDaoImpl implements CustomerDao
         return this.customers;
     }
 
-	// ------------------------------
-	//  METHODS - C R U [D]
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - C R U [D]
+    // ------------------------------
 
     @Override
     public void deleteCustomer(Customer customer) {

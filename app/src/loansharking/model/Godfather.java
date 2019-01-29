@@ -6,63 +6,66 @@ package loansharking.model;
  */
 public class Godfather
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
-	private int ID;
-	private String fName;
-	private String lName;
-	private String phone;
-	private String turf;
+    private int ID;
+    private String fName;
+    private String lName;
+    private String phone;
+    private String turf;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
-	public Godfather(int ID, String fName, String lName, String phone, String turf) {
-		this.ID = ID;
-		this.fName = fName;
-		this.lName = lName;
-		this.phone = phone;
-		this.turf = turf;
-	}
+    public Godfather() {}
+
+    public Godfather(int ID, String fName, String lName, String phone, String turf) {
+        this.ID = ID;
+        this.fName = fName;
+        this.lName = lName;
+        this.phone = phone;
+        this.turf = turf;
+    }
 	
-	// ------------------------------
-	//  METHODS - Getters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Getters
+    // ------------------------------
 	
-	public int getID() {
-		return this.ID;
-	}
+    public int getID() {
+        return this.ID;
+    }
 
-	public String getFName() {
-		return this.fName;
-	}
+    public String getFName() {
+        return this.fName;
+    }
 
-	public String getLName() {
-		return this.lName;
-	}
+    public String getLName() {
+        return this.lName;
+    }
 
     public String getPhone() {
-		return this.phone;
+        return this.phone;
     }
 
     public String getTurf() {
         return this.turf;
     }
 
+    @Override
     public String toString() {
         String godfather = "";
-		godfather += getFName().toUpperCase() + " \"" + getLName().toUpperCase() + "\n";
-		godfather += getTurf();
-		godfather += getPhone();
+        godfather += getFName().toUpperCase() + " \"" + getLName().toUpperCase() + "\n";
+        godfather += getTurf();
+        godfather += getPhone();
         return godfather;
     }
 
-	// ------------------------------
-	//  METHODS - Setters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Setters
+    // ------------------------------
 
     public void setFName(String fName) {
         this.fName = fName;

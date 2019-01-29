@@ -6,62 +6,62 @@ package loansharking.model;
  */
 public class Goon
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
-	private int ID;
-	private String fName;
+    private int ID;
+    private String fName;
     private String lName;
     private String nickName;
-	private String phone;
+    private String phone;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
-	public Goon(int ID, String fName, String lName, String nickName, String phone) {
+    public Goon(int ID, String fName, String lName, String nickName, String phone) {
         this.ID = ID;
         this.fName = fName;
         this.lName = lName;
         this.nickName = nickName;
-		this.phone = phone;
-	}
+        this.phone = phone;
+    }
 
-	// ------------------------------
-	//  METHODS - Getters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Getters
+    // ------------------------------
 
-	public int getID() {
-		return this.ID;
-	}
+    public int getID() {
+        return this.ID;
+    }
 
-	public String getFName() {
-		return this.fName;
-	}
+    public String getFName() {
+        return this.fName;
+    }
 
-	public String getLName() {
-		return this.lName;
-	}
+    public String getLName() {
+        return this.lName;
+    }
 
     public String getnickName() {
         return this.nickName;
     }
 
-	public String getPhone() {
-		return this.phone;
-	}
+    public String getPhone() {
+        return this.phone;
+    }
 
-	public String toString() {
+    public String toString() {
         String goon = "";
-		goon += getFName().toUpperCase() + " \"" + getnickName().toUpperCase() + "\" " + getLName().toUpperCase() + "\n";
-		goon += getPhone();
+        goon += getFName().toUpperCase() + " \"" + getnickName().toUpperCase() + "\" " + getLName().toUpperCase() + "\n";
+        goon += getPhone();
         return goon;
     }
 
-	// ------------------------------
-	//  METHODS - Setters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Setters
+    // ------------------------------
 
     public void setFName(String fName) {
         this.fName = fName;

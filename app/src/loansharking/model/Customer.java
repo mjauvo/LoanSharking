@@ -6,75 +6,74 @@ package loansharking.model;
  */
 public class Customer
 {
-	// ------------------------------
-	//  VARIABLES
-	// ------------------------------
+    // ------------------------------
+    //  VARIABLES
+    // ------------------------------
 
-	private int ID;
-	private String fName;
-	private String lName;
-	private String address;
-	private String phone;
+    private int ID;
+    private String fName;
+    private String lName;
+    private String address;
+    private String phone;
     private String email;
 
-	// ------------------------------
-	//  CONSTRUCTOR(S)
-	// ------------------------------
+    // ------------------------------
+    //  CONSTRUCTOR(S)
+    // ------------------------------
 
-    public Customer() {
-    }
+    public Customer() {}
 
     public Customer(int ID, String fName, String lName, String address, String phone, String email) {
-		this.ID = ID;
-		this.fName = fName;
-		this.lName = lName;
-		this.address = address;
-		this.phone = phone;
+        this.ID = ID;
+        this.fName = fName;
+        this.lName = lName;
+        this.address = address;
+        this.phone = phone;
         this.email = email;
-	}
+    }
 
-	// ------------------------------
-	//  METHODS - Getters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Getters
+    // ------------------------------
 
-	public int getID() {
-		return this.ID;
-	}
+    public int getID() {
+        return this.ID;
+    }
 
-	public String getFName() {
-		return this.fName;
-	}
+    public String getFName() {
+        return this.fName;
+    }
 
-	public String getLName() {
-		return this.lName;
-	}
+    public String getLName() {
+        return this.lName;
+    }
 
-	public String getAddress() {
-		return this.address;
-	}
+    public String getAddress() {
+        return this.address;
+    }
 
-	public String getPhone() {
-		return this.phone;
-	}
+    public String getPhone() {
+        return this.phone;
+    }
 
-	public String getEmail() {
-		return this.email;
-	}
+    public String getEmail() {
+        return this.email;
+    }
 
     @Override
-	public String toString() {
+    public String toString() {
         String customer = "";
-		customer += getFName().toUpperCase() + " " + getLName().toUpperCase() + " ";
-		customer += "(" + getID() + ")\n";
-		customer += getAddress() + "\n";
-		customer += getPhone() + "\n";
-		customer += getEmail() + "\n";
-		return customer;
-	}
+        customer += getFName().toUpperCase() + " " + getLName().toUpperCase() + " ";
+        customer += "(" + getID() + ")\n";
+        customer += getAddress() + "\n";
+        customer += getPhone() + "\n";
+        customer += getEmail() + "\n";
+        return customer;
+    }
 
-	// ------------------------------
-	//  METHODS - Setters
-	// ------------------------------
+    // ------------------------------
+    //  METHODS - Setters
+    // ------------------------------
 
     public void setFName(String fName) {
         this.fName = fName;
