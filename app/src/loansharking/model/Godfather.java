@@ -1,7 +1,8 @@
 package loansharking.model;
 
 /**
- * A class representing a mob godfather
+ * A class representing a mob godfather, i.e.
+ * the payee, the top man to whom money is owed.
  */
 public class Godfather
 {

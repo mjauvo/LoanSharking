@@ -1,7 +1,8 @@
 package loansharking.model;
 
 /**
- * A class representing a goon
+ * A class representing a goon, i.e.
+ * a person who ensures that the debt is paid....
  */
 public class Goon
 {

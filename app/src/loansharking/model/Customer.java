@@ -1,7 +1,8 @@
 package loansharking.model;
 
 /**
- * A class representing a customer
+ * A class representing a customer, i.e.
+ * the debt payer, the unfortunate individual.
  */
 public class Customer
 {

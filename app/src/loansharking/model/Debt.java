@@ -1,7 +1,7 @@
 package loansharking.model;
 
 /**
- * A class representing a debt
+ * A class representing a debt.
  */
 public class Debt
 {
