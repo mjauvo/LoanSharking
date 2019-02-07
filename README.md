@@ -1,7 +1,7 @@
 # LoanSharking
 A tiny 'tongue-in-cheek' application which demonstrates the utilization of a database with Java and which was a programming lab assignment during B.Sc studies.
 
-This application keeps track of loans that are owed to various crime bosses, i.e. "Godfathers". The application shows the following info:
+This application keeps track of loans that are owed to various crime bosses, i.e. "Godfathers". The application shows the following info.
 
 ### Godfathers
 
