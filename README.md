@@ -1,6 +1,6 @@
 # LoanSharking
 
-This application is done with 'tongue-in-cheek' and it keeps track of loans that are owed to various crime bosses, i.e. "Godfathers". The application shows the following info.
+This is a tiny text-based Java application which is done with 'tongue-in-cheek'. The application keeps track of loans that which owed to various crime bosses, i.e. "Godfathers". The application shows the following info.
 
 ### Godfathers
 
