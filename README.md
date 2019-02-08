@@ -2,10 +2,6 @@
 
 This is a tiny text-based Java application which is done with 'tongue-in-cheek'. The application keeps track of loans that which owed to various crime bosses, i.e. "Godfathers". The application shows the following info.
 
-### Godfathers
-
-The database stores the name, the address, the nickname and the contact info of the loan sharking crime bosses.
-
 ### Customers
 
 The database stores the name, the address and the contact info of these unfortunate ones who have been forced to resort to borrowing money from these crime bosses.
@@ -13,6 +9,10 @@ The database stores the name, the address and the contact info of these unfortun
 ### Debts
 
 The database stores the debts with their interest rates, dates that the debts were obtained, due dates and dates when the debts were paid. If the customer is unable to pay in full, the payment is recorded and the debt is updated.
+
+### Godfathers
+
+The database stores the name, the address, the nickname and the contact info of the loan sharking crime bosses.
 
 ### Goons
 
