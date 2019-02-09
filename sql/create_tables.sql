@@ -25,6 +25,7 @@ CREATE TABLE tblGodfather(
     lastName    VARCHAR (255)   NOT NULL,
     nickName    VARCHAR (255)   NOT NULL,
     turf        VARCHAR (255)   NOT NULL,
+    phone       VARCHAR (255)   NOT NULL,
     PRIMARY KEY (ID)
 );
 
