@@ -38,7 +38,6 @@ public class Database
      * @return Connection
      */
     public Connection openConnection() throws SQLException {
-        //System.out.println("\nDatabase connection: " + DBconn);
         if (DBconn == null || DBconn.isClosed()) {
             try {
                 System.out.print("Opening database connection...");
@@ -62,15 +61,12 @@ public class Database
      * @throws java.sql.SQLException
      */
     public void closeConnection() throws SQLException {
-        //System.out.println("Database connection: " + conn);
         if(DBconn != null || !DBconn.isClosed()) {
             try {
                 System.out.print("Closing database connection...");
                 DBconn.close();
-                //System.out.println("Database connection: " + conn + "\n");
                 DBconn = null;
                 System.out.println("CLOSED");
-                //System.out.println("Database connection: " + conn + "\n");
             }
             catch (Exception e) {
                 System.out.println("FAILED");
