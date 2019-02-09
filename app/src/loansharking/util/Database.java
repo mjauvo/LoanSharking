@@ -14,8 +14,8 @@ public class Database
     // ------------------------------
 
     private final String URL = "jdbc:mysql://localhost/loanshark";
-    private final String USER = "root";
-    private final String PASS = "vertrigo";
+    private final String USER = "";
+    private final String PASS = "";
     
     private Connection DBconn = null;
     
