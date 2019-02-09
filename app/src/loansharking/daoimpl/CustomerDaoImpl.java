@@ -157,7 +157,7 @@ public class CustomerDaoImpl implements CustomerDao
 
         try {
             DBconn = DB.openConnection();
-			sql = "DELETE FROM Asiakas WHERE Id=?";
+            sql = "DELETE FROM Asiakas WHERE Id=?";
 
             PreparedStatement pst = DBconn.prepareStatement(sql);
             pst.setInt(1, cust.getID());
@@ -167,10 +167,10 @@ public class CustomerDaoImpl implements CustomerDao
 
             pst.close();
             DBconn.close();
-		}
-		catch (SQLException e) {
+        }
+        catch (SQLException e) {
             System.out.println("FAILED");
             System.out.println("Reason: " + e.getMessage());
-		}
+        }
     }
 }
