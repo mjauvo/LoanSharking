@@ -21,16 +21,12 @@ public class CustomerDaoImpl implements CustomerDao
     private Connection DBconn;
     private String sql;
 
-    // Customer(s) retrieved from database
-    private ArrayList<Customer> customers;
-
     // ------------------------------
     //  CONSTRUCTOR(S)
     // ------------------------------
 
     public CustomerDaoImpl() {
         this.DB  = new Database();
-        this.customers = new ArrayList<Customer>();
     }
 
 
@@ -40,8 +36,7 @@ public class CustomerDaoImpl implements CustomerDao
 
     @Override
     public void createCustomer(Customer customer) {
-        // Replace the list operation with a database operation
-        this.customers.add(customer);
+        // Insert here a database operation
     }
 
     // ------------------------------
@@ -63,7 +58,7 @@ public class CustomerDaoImpl implements CustomerDao
 
         try {
             DBconn = DB.openConnection();
-			sql = "SELECT * FROM Asiakas WHERE Id=?";
+            sql = "SELECT * FROM Asiakas WHERE Id=?";
 
             PreparedStatement pst = DBconn.prepareStatement(sql);
             pst.setInt(1, ID);
@@ -84,11 +79,11 @@ public class CustomerDaoImpl implements CustomerDao
 
             pst.close();
             DBconn.close();
-		}
-		catch (SQLException e) {
+        }
+        catch (SQLException e) {
             System.out.println("FAILED");
             System.out.println("Reason: " + e.getMessage());
-		}
+        }
 
         return cust;
     }
@@ -101,13 +96,14 @@ public class CustomerDaoImpl implements CustomerDao
      * @return ArrayList<Customer>
      */
     @Override
-    public List<Customer> readAllCustomers() {
+    public ArrayList<Customer> readAllCustomers() {
         System.out.print("Retrieving all customers...");
+        ArrayList<Customer> customers = new ArrayList<>();
         Customer cust;
 
         try {
             DBconn = DB.openConnection();
-			sql = "SELECT * FROM Asiakas";
+            sql = "SELECT * FROM Asiakas";
 
             PreparedStatement pst = DBconn.prepareStatement(sql);
 
@@ -124,16 +120,16 @@ public class CustomerDaoImpl implements CustomerDao
                 cust.setCity(rst.getString("city"));
                 cust.setPhone(rst.getString("phone"));
                 cust.setEmail(rst.getString("email"));
-                this.customers.add(cust);
+                customers.add(cust);
             }
 
             pst.close();
             DBconn.close();
-		}
-		catch (SQLException e) {
+        }
+        catch (SQLException e) {
             System.out.println("FAILED");
             System.out.println("Reason: " + e.getMessage());
-		}
+        }
 
         return customers;
     }
