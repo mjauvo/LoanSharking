@@ -14,8 +14,8 @@ public class Database
     // ------------------------------
 
     private final String URL = "jdbc:mysql://localhost/loanshark";
-    private final String USER = "";
-    private final String PASS = "";
+    private final String USER = "root";
+    private final String PASS = "vertrigo";
     
     private Connection DBconn = null;
     
@@ -59,6 +59,7 @@ public class Database
      *
      * @pre  Database connection is open.
      * @post Database connection is closed and null.
+     * @throws java.sql.SQLException
      */
     public void closeConnection() throws SQLException {
         //System.out.println("Database connection: " + conn);
