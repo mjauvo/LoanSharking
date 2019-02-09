@@ -57,9 +57,9 @@ public class CustomerDaoImpl implements CustomerDao
      * @return ArrayList<Customer>
      */
     @Override
-    public ArrayList<Customer> readCustomerById(int ID) {
+    public Customer readCustomerById(int ID) {
         System.out.print("Retrieving customer (" + ID + ")...");
-        Customer cust;
+        Customer cust = new Customer();
 
         try {
             DBconn = DB.openConnection();
@@ -72,7 +72,6 @@ public class CustomerDaoImpl implements CustomerDao
             System.out.println("DONE!");
 
             while(rst.next()) {
-                cust = new Customer();
                 cust.setID(rst.getInt("ID"));
                 cust.setFName(rst.getString("FName"));
                 cust.setLName(rst.getString("LName"));
@@ -81,7 +80,6 @@ public class CustomerDaoImpl implements CustomerDao
                 cust.setCity(rst.getString("city"));
                 cust.setPhone(rst.getString("phone"));
                 cust.setEmail(rst.getString("email"));
-                this.customers.add(cust);
             }
 
             pst.close();
@@ -92,7 +90,7 @@ public class CustomerDaoImpl implements CustomerDao
             System.out.println("Reason: " + e.getMessage());
 		}
 
-        return customers;
+        return cust;
     }
 
     /**
