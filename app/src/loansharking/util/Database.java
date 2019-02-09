@@ -64,7 +64,7 @@ public class Database
     public void closeConnection() throws SQLException {
         //System.out.println("Database connection: " + conn);
         if(DBconn != null || !DBconn.isClosed()) {
-    		try {
+            try {
                 System.out.print("Closing database connection...");
                 DBconn.close();
                 //System.out.println("Database connection: " + conn + "\n");
