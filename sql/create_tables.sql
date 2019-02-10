@@ -24,8 +24,8 @@ CREATE TABLE tblGodfather(
     firstName   VARCHAR (255)   NOT NULL,
     lastName    VARCHAR (255)   NOT NULL,
     nickName    VARCHAR (255)   NOT NULL,
-    turf        VARCHAR (255)   NOT NULL,
     phone       VARCHAR (255)   NOT NULL,
+    turf        VARCHAR (255)   NOT NULL,
     PRIMARY KEY (ID)
 );
 
@@ -55,7 +55,7 @@ CREATE TABLE tblDebts(
     CustomerID      INTEGER (7)     NOT NULL,
     amount          INTEGER         NOT NULL,
     interestRate    TINYINT         NOT NULL,
-    acquiredDate    DATE            NOT NULL,
+    borrowedDate    DATE            NOT NULL,
     dueDate         DATE            NOT NULL,
     paidDate        DATE,
     PRIMARY KEY (GodfatherID, CustomerID),

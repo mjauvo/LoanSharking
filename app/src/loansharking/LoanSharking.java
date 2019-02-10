@@ -10,7 +10,7 @@ package loansharking;
  * keep track of debt collection.
  * <p>
  * The main entities are:
- * - Customer (payer)
+ * - Customer (unfortunate individual)
  * - Godfather (payee)
  * - Goon (one who ensures the debt is paid)
  * - Debt
