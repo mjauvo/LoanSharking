@@ -1,8 +1,10 @@
 package loansharking.model;
 
 /**
- * A class representing a mob godfather, i.e.
- * the payee, the top man to whom money is owed.
+ * A class representing a crime boss i.e.
+ * a godfather to whom money is owed.
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public class Godfather
 {
@@ -11,8 +13,9 @@ public class Godfather
     // ------------------------------
 
     private int ID;
-    private String fName;
-    private String lName;
+    private String firstName;
+    private String lastName;
+    private String nickName;
     private String phone;
     private String turf;
 
@@ -22,10 +25,12 @@ public class Godfather
 
     public Godfather() {}
 
-    public Godfather(int ID, String fName, String lName, String phone, String turf) {
+    public Godfather(int ID, String firstName, String lastName,
+                        String nickName, String phone, String turf) {
         this.ID = ID;
-        this.fName = fName;
-        this.lName = lName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nickName = nickName;
         this.phone = phone;
         this.turf = turf;
     }
@@ -38,12 +43,16 @@ public class Godfather
         return this.ID;
     }
 
-    public String getFName() {
-        return this.fName;
+    public String getFirstName() {
+        return this.firstName;
     }
 
-    public String getLName() {
-        return this.lName;
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getNickName() {
+        return this.nickName;
     }
 
     public String getPhone() {
@@ -57,7 +66,7 @@ public class Godfather
     @Override
     public String toString() {
         String godfather = "";
-        godfather += getFName().toUpperCase() + " \"" + getLName().toUpperCase() + "\n";
+        godfather += getFirstName().toUpperCase() + " \"" + getNickName().toUpperCase() + "\" " + getLastName().toUpperCase() + "\n";
         godfather += getTurf();
         godfather += getPhone();
         return godfather;
@@ -67,12 +76,16 @@ public class Godfather
     //  METHODS - Setters
     // ------------------------------
 
-    public void setFName(String fName) {
-        this.fName = fName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setLName(String lName) {
-        this.lName = lName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public void setPhone(String phone) {
