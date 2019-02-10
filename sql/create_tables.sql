@@ -41,7 +41,7 @@ CREATE TABLE tblGoon(
     lastName    VARCHAR (255)   NOT NULL,
     nickName    VARCHAR (255)   NOT NULL,
     phone       VARCHAR (255)   NOT NULL,
-    bossID      SMALLINT (3)    NOT NULL,
+    bossID      SMALLINT (3),
     PRIMARY KEY (ID),
     FOREIGN KEY (bossID) REFERENCES tblGodfather (ID)
         ON DELETE RESTRICT
