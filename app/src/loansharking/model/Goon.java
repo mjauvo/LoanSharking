@@ -3,6 +3,8 @@ package loansharking.model;
 /**
  * A class representing a goon, i.e.
  * a person who ensures that the debt is paid....
+ * <p>
+ * @author Markus J. Auvo 2019
  */
 public class Goon
 {
@@ -11,21 +13,23 @@ public class Goon
     // ------------------------------
 
     private int ID;
-    private String fName;
-    private String lName;
+    private String firstName;
+    private String lastName;
     private String nickName;
     private String phone;
+    private Godfather boss;
 
     // ------------------------------
     //  CONSTRUCTOR(S)
     // ------------------------------
 
-    public Goon(int ID, String fName, String lName, String nickName, String phone) {
+    public Goon(int ID, String firstName, String lastName, String nickName, String phone, Godfather boss) {
         this.ID = ID;
-        this.fName = fName;
-        this.lName = lName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.nickName = nickName;
         this.phone = phone;
+        this.boss = boss;
     }
 
     // ------------------------------
@@ -36,15 +40,15 @@ public class Goon
         return this.ID;
     }
 
-    public String getFName() {
-        return this.fName;
+    public String getFirstName() {
+        return this.firstName;
     }
 
-    public String getLName() {
-        return this.lName;
+    public String getLastName() {
+        return this.lastName;
     }
 
-    public String getnickName() {
+    public String getNickName() {
         return this.nickName;
     }
 
@@ -52,10 +56,16 @@ public class Goon
         return this.phone;
     }
 
+    public Godfather getBoss() {
+        return this.boss;
+    }
+
+    @Override
     public String toString() {
         String goon = "";
-        goon += getFName().toUpperCase() + " \"" + getnickName().toUpperCase() + "\" " + getLName().toUpperCase() + "\n";
+        goon += getFirstName().toUpperCase() + " \"" + getNickName().toUpperCase() + "\" " + getLastName().toUpperCase() + "\n";
         goon += getPhone();
+        goon += getBoss().getFirstName() + "\"" + getBoss().getNickName() + "\"" + getBoss().getLastName() + "\n";
         return goon;
     }
 
@@ -63,12 +73,16 @@ public class Goon
     //  METHODS - Setters
     // ------------------------------
 
-    public void setFName(String fName) {
-        this.fName = fName;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public void setLName(String lName) {
-        this.lName = lName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setNickName(String nickName) {
@@ -77,5 +91,9 @@ public class Goon
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setBoss(Godfather boss) {
+        this.boss = boss;
     }
 }
