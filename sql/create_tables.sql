@@ -29,7 +29,7 @@ CREATE TABLE tblGodfather(
     PRIMARY KEY (ID)
 );
 
-ALTER TABLE tblCustomer AUTO_INCREMENT=601;
+ALTER TABLE tblGodfather AUTO_INCREMENT=601;
 
 --------------------------------------------------------------------
 -- T A B L E S   W I T H   F O R E I G N   K E Y S   ( 3 )
@@ -48,9 +48,9 @@ CREATE TABLE tblGoon(
         ON UPDATE CASCADE
 );
 
-ALTER TABLE tblCustomer AUTO_INCREMENT=1001;
+ALTER TABLE tblGoon AUTO_INCREMENT=1001;
 
-CREATE TABLE tblDebts(
+CREATE TABLE tblDebt(
     GodfatherID     SMALLINT (3)    NOT NULL,
     CustomerID      INTEGER (7)     NOT NULL,
     amount          INTEGER         NOT NULL,
