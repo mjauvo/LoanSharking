@@ -10,7 +10,7 @@ The database stores the name, the address and the contact info of these unfortun
 
 #### Debts
 
-The database stores the debts with their interest rates, dates that the debts were obtained, due dates and dates when the debts were paid. If the customer is unable to pay in full, the payment is recorded and the debt is updated.
+The database stores the debts with their interest rates, dates that the debts were obtained, due dates and dates when the debts were paid. If the customer is unable to pay in full but only a part of it, the payment is recorded and the debt is updated.
 
 #### Godfathers
 
@@ -18,7 +18,7 @@ The database stores the name, the address, the nickname and the contact info of 
 
 #### Goons
 
-The database stores the muscle-for-hire who do their employers' bidding and ensure that the debts are paid. Goons have a sense of honor in a way that they work only for one crime boss at a time and always follow through until their services are now longer required and they become available.
+The database stores the muscle-for-hire who do their employers' bidding and ensure that the debts are paid. Goons have a sense of honor in a way that they work only for one crime boss at a time and always follow through until their services are now longer required and thus, they become available.
 
 ## Technical
 
