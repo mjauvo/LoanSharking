@@ -23,7 +23,6 @@ CREATE TABLE tblGodfather(
     ID          SMALLINT (3)    NOT NULL    AUTO_INCREMENT,
     firstName   VARCHAR (255)   NOT NULL,
     lastName    VARCHAR (255)   NOT NULL,
-    nickName    VARCHAR (255)   NOT NULL,
     phone       VARCHAR (255)   NOT NULL,
     turf        VARCHAR (255)   NOT NULL,
     PRIMARY KEY (ID)
