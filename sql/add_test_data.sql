@@ -31,4 +31,4 @@ VALUES
     ('Johnny', 'Eye', 'One Shot', '444-8901', 606),
     ('Enzo', 'Pastello', 'Two Pipes', '444-9012', 601),
     ('Vito', 'Leon', 'The Core', '444-2109', 605),
-    ('Moe', 'Mirelli', 'Green', '444-1098', 603),
+    ('Moe', 'Mirelli', 'Green', '444-1098', 603);
