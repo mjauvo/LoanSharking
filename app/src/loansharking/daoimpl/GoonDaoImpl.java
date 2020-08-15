@@ -55,6 +55,16 @@ public class GoonDaoImpl implements GoonDao
     }
 
     // ------------------------------
+    //  METHODS - C R [U] D
+    // ------------------------------
+
+    @Override
+    public void updateGodFather(Goon goon) {
+        // Replace the list operation with a real database operation
+        this.goons.add(goon);
+    }
+
+    // ------------------------------
     //  METHODS - C R U [D]
     // ------------------------------
 

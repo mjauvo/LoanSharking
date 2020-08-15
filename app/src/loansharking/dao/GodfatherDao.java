@@ -14,8 +14,16 @@ public interface GodfatherDao
     //  METHODS - C R U D
     // ------------------------------
 
-    void createGodfather(Godfather godfather);      // C
-    Godfather readGodfatherById(int ID);            // R
-    List<Godfather> readAllGodfathers();            // R
-    void deleteGodfather(Godfather godfather);      // D
+    // C
+    void createGodfather(Godfather godfather);
+
+    // R
+    Godfather readGodfatherById(int ID);
+    List<Godfather> readAllGodfathers();
+
+    // U
+    void updateGodFather(Godfather godfather);
+
+    //D
+    void deleteGodfather(Godfather godfather);
 }

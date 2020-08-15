@@ -14,8 +14,16 @@ public interface GoonDao
     //  METHODS - C R U D
     // ------------------------------
 
-    void createGoon(Goon goon);      // C
-    Goon readGoonById(int ID);       // R
-    List<Goon> readAllGoons();       // R
-    void deleteGoon(Goon goon);      // D
+    // C
+    void createGoon(Goon goon);
+
+    // R
+    Goon readGoonById(int ID);
+    List<Goon> readAllGoons();
+
+    // U
+    void updateGodFather(Goon goon);
+
+    //D
+    void deleteGoon(Goon goon);
 }

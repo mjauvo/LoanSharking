@@ -55,6 +55,16 @@ public class GodfatherDaoImpl implements GodfatherDao
     }
 
     // ------------------------------
+    //  METHODS - C R [U] D
+    // ------------------------------
+
+    @Override
+    public void updateGodFather(Godfather godfather) {
+        // Replace the list operation with a real database operation
+        this.godfathers.add(godfather);
+    }
+
+    // ------------------------------
     //  METHODS - C R U [D]
     // ------------------------------
 
