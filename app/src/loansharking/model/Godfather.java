@@ -15,7 +15,6 @@ public class Godfather
     private int ID;
     private String firstName;
     private String lastName;
-    private String nickName;
     private String phone;
     private String turf;
 
@@ -26,11 +25,10 @@ public class Godfather
     public Godfather() {}
 
     public Godfather(int ID, String firstName, String lastName,
-                        String nickName, String phone, String turf) {
+                        String phone, String turf) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.nickName = nickName;
         this.phone = phone;
         this.turf = turf;
     }
@@ -51,10 +49,6 @@ public class Godfather
         return this.lastName;
     }
 
-    public String getNickName() {
-        return this.nickName;
-    }
-
     public String getPhone() {
         return this.phone;
     }
@@ -66,7 +60,7 @@ public class Godfather
     @Override
     public String toString() {
         String godfather = "";
-        godfather += getFirstName().toUpperCase() + " \"" + getNickName().toUpperCase() + "\" " + getLastName().toUpperCase() + "\n";
+        godfather += getFirstName().toUpperCase() + " " + getLastName().toUpperCase() + "\n";
         godfather += getTurf();
         godfather += getPhone();
         return godfather;
@@ -82,10 +76,6 @@ public class Godfather
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
     }
 
     public void setPhone(String phone) {

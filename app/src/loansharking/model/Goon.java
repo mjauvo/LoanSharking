@@ -65,7 +65,7 @@ public class Goon
         String goon = "";
         goon += getFirstName().toUpperCase() + " \"" + getNickName().toUpperCase() + "\" " + getLastName().toUpperCase() + "\n";
         goon += getPhone();
-        goon += getBoss().getFirstName() + "\"" + getBoss().getNickName() + "\"" + getBoss().getLastName() + "\n";
+        goon += getBoss().getFirstName() + " " + getBoss().getLastName() + "\n";
         return goon;
     }
 
