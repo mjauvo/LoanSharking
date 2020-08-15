@@ -14,8 +14,16 @@ public interface DebtDao
     //  METHODS - C R U D
     // ------------------------------
 
-    void createDebt(Debt debt);     // C
-    Debt readDebtById(int ID);      // R
-    List<Debt> readAllDebts();      // R
-    void deleteDebt(Debt debt);     // D
+    // C
+    void createDebt(Debt debt);
+
+    // R
+    Debt readDebtById(int ID);
+    List<Debt> readAllDebts();
+
+    // U
+    void updateDebt(Debt debt);
+
+    // D
+    void deleteDebt(Debt debt);
 }

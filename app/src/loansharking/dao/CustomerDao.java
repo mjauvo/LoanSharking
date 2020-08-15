@@ -14,8 +14,16 @@ public interface CustomerDao
     //  METHODS - C R U D
     // ------------------------------
 
-    void createCustomer(Customer customer);     // C
-    Customer readCustomerById(int ID);          // R
-    List<Customer> readAllCustomers();          // R
-    void deleteCustomer(Customer customer);     // D
+    // C
+    void createCustomer(Customer customer);
+
+    // R
+    Customer readCustomerById(int ID);
+    List<Customer> readAllCustomers();
+
+    // U
+    void updateCustomer(Customer customer);
+
+    // D
+    void deleteCustomer(Customer customer);
 }

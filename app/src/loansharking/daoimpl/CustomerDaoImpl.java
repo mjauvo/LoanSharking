@@ -135,6 +135,20 @@ public class CustomerDaoImpl implements CustomerDao
     }
 
     // ------------------------------
+    //  METHODS - C R [U] D
+    // ------------------------------
+
+    /**
+     * Updates a customer in the database.
+     *
+     * @pre true 
+     * @post true
+     * @param cust
+     */
+    @Override
+    public void updateCustomer(Customer cust) {}
+
+    // ------------------------------
     //  METHODS - C R U [D]
     // ------------------------------
 

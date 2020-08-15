@@ -55,6 +55,16 @@ public class DebtDaoImpl implements DebtDao
     }
 
     // ------------------------------
+    //  METHODS - C R [U] D
+    // ------------------------------
+
+    @Override
+    public void updateDebt(Debt debt) {
+        // Replace the list operation with a real database operation
+        this.debts.add(debt);
+    }
+
+    // ------------------------------
     //  METHODS - C R U [D]
     // ------------------------------
 
