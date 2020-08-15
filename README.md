@@ -10,7 +10,7 @@ The database stores the name, the address and the contact info of these unfortun
 
 #### Debts
 
-The database stores the debts with their interest rates, dates that the debts were obtained, due dates and dates when the debts were paid. If the customer is unable to pay in full but only a part of it, the payment is recorded and the debt is updated.
+The database stores the debts with their interest rates, dates that the debts were obtained, due dates and dates when the debts were paid. If the customer is unable to pay the debt in full by due date, a goon is sent to collect.
 
 #### Godfathers
 
